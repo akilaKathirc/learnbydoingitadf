@@ -1,0 +1,9 @@
+{
+	"name": "learnbydoingitinst",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8db48b6d-eb7b-4d1c-9a53-d765d558e2e5",
+		"tenantId": "80c649eb-2a8c-4034-a7e1-5f99a3e482d6"
+	}
+}
