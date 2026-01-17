@@ -34,7 +34,102 @@
 							"type": "JsonWriteSettings"
 						}
 					},
-					"enableStaging": false
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "order_id",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['order_id']"
+								}
+							},
+							{
+								"source": {
+									"name": "user_id",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['user_id']"
+								}
+							},
+							{
+								"source": {
+									"name": "order_date",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['order_date']"
+								}
+							},
+							{
+								"source": {
+									"name": "product_id",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['product_id']"
+								}
+							},
+							{
+								"source": {
+									"name": "product_category",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['product_category']"
+								}
+							},
+							{
+								"source": {
+									"name": "product_name",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['product_name']"
+								}
+							},
+							{
+								"source": {
+									"name": "quantity",
+									"type": "Int64"
+								},
+								"sink": {
+									"path": "$['quantity']"
+								}
+							},
+							{
+								"source": {
+									"name": "price_per_unit",
+									"type": "Double"
+								},
+								"sink": {
+									"path": "$['price_per_unit']"
+								}
+							},
+							{
+								"source": {
+									"name": "payment_method",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['payment_method']"
+								}
+							},
+							{
+								"source": {
+									"name": "order_status",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['order_status']"
+								}
+							}
+						]
+					}
 				},
 				"inputs": [
 					{
