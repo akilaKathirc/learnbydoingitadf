@@ -1,5 +1,5 @@
 {
-	"name": "DelimitedText3",
+	"name": "DelimitedText5",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorage1",
@@ -19,7 +19,7 @@
 					"value": "@dataset().filename",
 					"type": "Expression"
 				},
-				"folderPath": "output",
+				"folderPath": "nonemptyfiles",
 				"fileSystem": "copyapidata"
 			},
 			"columnDelimiter": ",",
